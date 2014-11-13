@@ -1,22 +1,26 @@
-=== Real WP Shop Lite ===
+=== Real WP Shop Lite eCommerce Shopping Cart===
 Tags: e-commerce, ecommerce, shopping cart
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.0
+Stable tag: 1.0.3.
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Light, powerful, easy to use and theme WordPress e-commerce plugin that utilizes ajax for better experience.
+Light, powerful, easy to use and theme WordPress ecommerce / shopping cart plugin that utilizes ajax for better user experience.
 
 == Description ==
 
 Super easy to use, ajax-powered ecommerce shopping cart plugin for WordPress.
 
-Real WP Shop (RWPS) Lite follows standard WordPress methodology for theming, so you can make themes for it like you would make any other theme for wordpress.
+Real WP Shop (RWPS) Lite follows standard WordPress methodology for theming, so you can make themes for this ecommerce / shopping cart plugin like you would make any other theme for WordPress.
 
 It supports paypal for online payment processing, and allows for custom payment options that don't include online payment processing ( e.g. cash on delivery, western union, moneygram etc.).
 
 RWPS Lite does not force anything.
+
+If you use paypal for online payment processing, or don't need online payment processing, then you must try this ecommerce / shopping cart solution.
+
+Check out the demo and the docs and see for yourself how easy it is.
 
 Checkout the [DEMO](http://jultranet.com/wp/demorwpslite/)
 
