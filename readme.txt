@@ -1,4 +1,4 @@
-=== Real WP Shop Lite===
+=== Real WP Shop Lite eCommerce Shopping Cart===
 Tags: e-commerce, ecommerce, shopping cart
 Requires at least: 3.0.1
 Tested up to: 4.0
