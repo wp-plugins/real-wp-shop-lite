@@ -61,6 +61,7 @@ IF you change the ajax image then copy the name and extension exactly, make sure
 
 == Changelog ==
 
+Added "lite" to plugin name and broke main admin page functionality. Fixed.
 
 == Arbitrary section ==
 
