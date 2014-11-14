@@ -10,6 +10,8 @@ Light, powerful, easy to use and theme WordPress ecommerce / shopping cart plugi
 
 == Description ==
 
+There's a new ecommerce plugin in town, and it means business!
+
 Super easy to use, ajax-powered ecommerce shopping cart plugin for WordPress.
 
 Real WP Shop (RWPS) Lite eCommerce Shopping Cart follows standard WordPress methodology for theming, so you can make themes for this ecommerce / shopping cart plugin like you would make any other theme for WordPress.
