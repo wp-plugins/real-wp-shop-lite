@@ -2,7 +2,7 @@
 Tags: admin, attributes, blog catalog, catalog, catalogue, commerce, ecommerce shopping cart, directory, display products, e-commerce, ecommerce, gallery, implecode, inventory, list products, manage, plugin, post, posts, product, product catalog, paypal, product catalogue, product feed, product gallery, product management, products, sales, sell, shipping, shop, shopping, store, wordpress ecommerce, wp catalog, WP Catalogue
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
