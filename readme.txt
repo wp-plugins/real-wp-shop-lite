@@ -2,13 +2,15 @@
 Tags: admin, attributes, blog catalog, catalog, catalogue, commerce, ecommerce shopping cart, directory, display products, e-commerce, ecommerce, gallery, implecode, inventory, list products, manage, plugin, post, posts, product, product catalog, paypal, product catalogue, product feed, product gallery, product management, products, sales, sell, shipping, shop, shopping, store, wordpress ecommerce, wp catalog, WP Catalogue
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 2.0.0
+Stable tag: 2.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Light, powerful, easy to use and theme WordPress ecommerce / shopping cart plugin that utilizes ajax for better user experience.
 
 == Description ==
+
+There's a new ecommerce plugin in town, and it means business!
 
 Super easy to use, ajax-powered ecommerce shopping cart plugin for WordPress.
 
@@ -52,7 +54,7 @@ Yes.
 
 = Can I change the ajax image? =
 
-Yes. The ajax image's location is siteroot/wp-content/plugins/real-wp-shop/js/ajaximg.GIF .
+Yes. The ajax image's location is siteroot/wp-content/plugins/real-wp-shop-lite/js/ajaximg.GIF .
 
 IF you change the ajax image then copy the name and extension exactly, make sure the extension ( GIF ) is all uppercase!
 
