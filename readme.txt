@@ -52,7 +52,7 @@ Yes.
 
 = Can I change the ajax image? =
 
-Yes. The ajax image's location is siteroot/wp-content/plugins/real-wp-shop/js/ajaximg.GIF .
+Yes. The ajax image's location is siteroot/wp-content/plugins/real-wp-shop-lite/js/ajaximg.GIF .
 
 IF you change the ajax image then copy the name and extension exactly, make sure the extension ( GIF ) is all uppercase!
 
