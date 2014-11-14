@@ -1,8 +1,8 @@
-=== Real WP Shop Lite Ajax eCommerce Shopping Cart===
-Tags: admin, attributes, blog catalog, catalog, catalogue, commerce, directory, display products, e-commerce, ecommerce, implecode, inventory, list products, manage, plugin, post, posts, product, product catalog, paypal, product catalogue, product feed, product gallery, product management, products, sales, sell, shipping, shop, shopping, store, wordpress ecommerce, wp catalog, WP Catalogue
+=== Real WP Shop Ajax eCommerce Shopping Cart===
+Tags: admin, attributes, blog catalog, catalog, catalogue, commerce, ecommerce shopping cart, directory, display products, e-commerce, ecommerce, gallery, implecode, inventory, list products, manage, plugin, post, posts, product, product catalog, paypal, product catalogue, product feed, product gallery, product management, products, sales, sell, shipping, shop, shopping, store, wordpress ecommerce, wp catalog, WP Catalogue
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,11 +12,11 @@ Light, powerful, easy to use and theme WordPress ecommerce / shopping cart plugi
 
 Super easy to use, ajax-powered ecommerce shopping cart plugin for WordPress.
 
-Real WP Shop (RWPS) Lite follows standard WordPress methodology for making themes, so you can make themes for this ecommerce / shopping cart plugin like you would make any other theme for WordPress.
+Real WP Shop (RWPS) Lite eCommerce Shopping Cart follows standard WordPress methodology for theming, so you can make themes for this ecommerce / shopping cart plugin like you would make any other theme for WordPress.
 
 It supports paypal for online payment processing, and allows for custom payment options that don't include online payment processing ( e.g. cash on delivery, western union, moneygram etc.).
 
-RWPS Lite does not force anything.
+RWPS Lite eCommerce Shopping Cart does not force anything.
 
 If you use paypal for online payment processing, or don't need online payment processing, then you must try this ecommerce / shopping cart solution.
 
@@ -61,7 +61,6 @@ IF you change the ajax image then copy the name and extension exactly, make sure
 
 == Changelog ==
 
-Added "lite" to plugin name and broke main admin page functionality. Fixed.
 
 == Arbitrary section ==
 
