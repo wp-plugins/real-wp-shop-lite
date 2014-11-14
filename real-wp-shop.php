@@ -1607,7 +1607,7 @@ function vkrwps_do_search() {
 		$s .= '<div class=close>close</div>';
 
 	} else {
-		$s = 'No results found';
+		$s = '<span class=nrf>No results found</span>';
 		$s .= '<div class=close>close</div>';
 	}
 
