@@ -1,8 +1,8 @@
-=== Real WP Shop Ajax eCommerce Shopping Cart===
+=== Real WP Shop Lite Ajax eCommerce Shopping Cart===
 Tags: admin, attributes, blog catalog, catalog, catalogue, commerce, ecommerce shopping cart, directory, display products, e-commerce, ecommerce, gallery, implecode, inventory, list products, manage, plugin, post, posts, product, product catalog, paypal, product catalogue, product feed, product gallery, product management, products, sales, sell, shipping, shop, shopping, store, wordpress ecommerce, wp catalog, WP Catalogue
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 1.0.7
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -41,7 +41,7 @@ Check out the DEMO here: [RWPS PRO DEMO](http://jultranet.com/wp/demorwpspro/)
 
 == Installation ==
 
-1. Upload `real-wp-shop` folder to the `/wp-content/plugins/` directory
+1. Upload `real-wp-shop-lite` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==

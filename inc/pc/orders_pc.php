@@ -16,7 +16,7 @@ function vkrwps_orders_callback() {
     <form action="" method="post" id="vkrpsp-orders" style="position:relative;">
     <?php
     
-    $preload_img = get_site_url() . '/wp-content/plugins/real-wp-shop/js/ajaximg.GIF';
+    $preload_img = get_site_url() . '/wp-content/plugins/real-wp-shop-lite/js/ajaximg.GIF';
     $pre_img = '<img src='.$preload_img.' />';
 
     $symba = get_option('vkrwps_symba');
