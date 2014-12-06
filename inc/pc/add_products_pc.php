@@ -282,12 +282,32 @@ function vkrwps_add_products_callback() {
     </tr>
 
     <tr>
+
         <td style="width:300px;">
             <label for="upload">Upload image (max file size: 5mb):</label>
         </td>
+
         <td>
-            <input type="file" name="upload" class="button button-primarry">
+            <div class="img">
+                <img id="uploadPreview" style="width: 100px; height: 100px;" />
+            </div>
+
+            <input type="file" id="uploadImage" name="upload" class="button button-primarry" onchange="PreviewImage();">
+
+            <script type="text/javascript">
+
+                function PreviewImage() {
+                    var oFReader = new FileReader();
+                    oFReader.readAsDataURL(document.getElementById("uploadImage").files[0]);
+
+                    oFReader.onload = function (oFREvent) {
+                        document.getElementById("uploadPreview").src = oFREvent.target.result;
+                    };
+                };
+
+            </script>
         </td>
+        
     </tr>
 
     </table>
