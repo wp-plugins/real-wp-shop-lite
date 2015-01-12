@@ -111,6 +111,11 @@ echo '<div class=wrap style="position:relative;"><h2>Main Real WP Shop Admin Pag
 
 </div> <!-- end .proinfo -->
 
+<div class="docslink">
+    <a href="http://jultranet.com/wp/rwpslitedocs/" target="_blank">RWPS LITE DOCUMENTATION</a>
+</div> <!-- /.docslink -->
+
+
 <table class="form-table widefat">
 <?php wp_nonce_field('vkrwps-map'); ?>
 

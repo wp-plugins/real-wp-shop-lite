@@ -5,7 +5,7 @@ Plugin Name: Real WP Shop Lite
 Plugin URI: http://jultranet.com/wp/realwpshop
 Description: Lite ecommerce solution for WordPress
 Author: Vojislav Kovacevic
-Version: 2.0.3
+Version: 2.0.5
 Author URI: http://jultranet.com/wp/realwpshop
 */
 

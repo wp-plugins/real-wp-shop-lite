@@ -162,6 +162,20 @@ td.pil.img img {
   text-decoration: underline;
 }
 
+.docslink {
+  background: none repeat scroll 0 0 #ef672f;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 120px;
+}
+
+.docslink a {
+  color: white !important;
+}
+
 .proinfo a:hover {
   text-decoration: underline;
 }
