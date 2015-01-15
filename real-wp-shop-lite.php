@@ -26,12 +26,12 @@ require 'inc/get_pc.php';
 
 require 'inc/options.php';
 
-function myplugin_activate() {
+function vkrwpslite_myplugin_activate() {
 	if (!file_exists(WP_CONTENT_DIR.'/rwpsliteuploads')) {
     	mkdir( WP_CONTENT_DIR.'/rwpsliteuploads', 0777, true);
 	}
 }
-register_activation_hook( __FILE__, 'myplugin_activate' );
+register_activation_hook( __FILE__, 'vkrwpslite_myplugin_activate' );
 
 $pcss = get_option( 'vkrwps_pcss' );
 if ( $pcss == 'yes' ) { 
