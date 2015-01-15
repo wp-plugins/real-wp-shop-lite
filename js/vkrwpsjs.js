@@ -2,6 +2,8 @@ jQuery(document).ready(function($) {
 
 	if ( ! $('div.gai').length ) $('body').prepend('<div class=gai>'+ajax_object.preloader+'</div>');
 	
+	ajax_object = ajax_object;
+
 	$.ajax({
 		    type: "POST",
 		    async: true,
