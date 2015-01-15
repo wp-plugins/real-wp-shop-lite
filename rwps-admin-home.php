@@ -154,6 +154,7 @@ echo '<div class=wrap style="position:relative;"><h2>Main Real WP Shop Admin Pag
 	    </td>
 	    <td>
 	        <input type="text" name="cartdc" id="cartdc" class="regular-text" value="<?php echo $cartdc; ?>">
+            &nbsp;&nbsp; for example .myclass
 	    </td>
 	</tr>
 
@@ -163,6 +164,7 @@ echo '<div class=wrap style="position:relative;"><h2>Main Real WP Shop Admin Pag
 	    </td>
 	    <td>
 	        <input type="text" name="codc" id="codc" class="regular-text" value="<?php echo $codc; ?>">
+            &nbsp;&nbsp; for example .mainclass
 	    </td>
 	</tr>
 
