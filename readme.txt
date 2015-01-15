@@ -30,7 +30,7 @@ For documentation go here: [DOCUMENTATION](http://jultranet.com/wp/rwpslitedocs/
 
 I DO NOT offer support for the lite version. If you have a question, you can ask here on the plugin's forum, but I will probably not answer ( unless I think it will be useful for many people).
 
-If you find **BUGS**, please post them on the plugin's forum here, and I will GET RIGHT ON IT.
+If you find **BUGS**, please report them here: http://jultranet.com/wp/demorwpslite/bug-report/
 
 <h4>Real WP Shop PRO</h4>
 
