@@ -1,6 +1,9 @@
 jQuery(document).ready(function($) {    
     
+    console.log(ajax_object);
     if ( ! $('div.gai').length ) $('body').prepend('<div class=gai>'+ajax_object.preloader+'</div>');
+
+    // $('span.sym').css('visibility', 'visible');
 
     $.ajax({
             type: "POST",
@@ -226,10 +229,14 @@ jQuery(document).ready(function($) {
                     $('span.sym.two').hide();
                 }
 
-                $('.rwpsprod .apmsg'+c).addClass('active');
+                // $('.rwpsprod .apmsg'+c).addClass('active');
+                $('.rwpsprod .apmsg'+c).fadeIn('fast');
+
                 $('.rwpsprod .prel'+c).removeClass('active');               
                 setTimeout(function() {
-                    $('.rwpsprod .apmsg'+c).removeClass('active');   
+                    // $('.rwpsprod .apmsg'+c).removeClass('active'); 
+                    $('.rwpsprod .apmsg'+c).fadeOut('fast'); 
+
                 }, 1000);
             }
         }); // end ajax
@@ -440,6 +447,7 @@ jQuery(document).ready(function($) {
             $(ajax_object.coclass).html(response);   
         });
         $(ajax_object.coclass + ' .ajaximgwrap').addClass('active');
+
         return false;
     }); // end on click
 
