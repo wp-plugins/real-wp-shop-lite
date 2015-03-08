@@ -30,7 +30,6 @@ function vkrwps_edit_products_callback() {
 
         $in_stock = $_POST['in_stock'];
 
-
         global $wpdb;
 
         $flag = true;
@@ -50,7 +49,7 @@ function vkrwps_edit_products_callback() {
             $flag = false;
         }
 
-        $pp = number_format($pp, 2);
+        // $pp = number_format($pp, 2);
 
         if ( $flag ) {
 
@@ -73,7 +72,7 @@ function vkrwps_edit_products_callback() {
                 '%s',
                 '%s',
                 '%s',
-                '%f',
+                '%s',
                 '%f',
                 '%f'   
             ), 

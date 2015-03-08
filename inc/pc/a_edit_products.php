@@ -30,7 +30,13 @@ function vkrwps_edit_prod() {
 		$sd = apply_filters('the_content', $sd);
 
 		$p = (float)$prod_info->price;
-		$p = number_format($p, 2);
+		// $p = number_format($p, 2);
+		$p = $prod_info->price;
+		if (strpos($p,',') !== false) {
+            $p = $p;
+        } else {
+            $p = number_format($p, 2);
+        }
 
 		$jsonArray['id'] = $prod_info->id;
 		$jsonArray['cat_id'] = $prod_info->cat_id;
