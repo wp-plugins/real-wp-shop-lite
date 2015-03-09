@@ -139,8 +139,8 @@ function vkrwps_show_products ( $atts ) {
 			   	   <div class=right>
 					   <p class=prod-name><a href='.get_site_url().'/'.strtolower($post_name).'/><span>'.$value->name.'</span></a></p>
 					   <div class=prod-desc>'.$sd.'</div>
-					   <p class=price><span class=sprice>'.$pricetext.'</span> <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($value->price, 2).'</span><span class="sym two">'.$sym.'</span></p>
-					   <p class="shipping">'.$sps.' <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($sp, 2).'</span><span class="sym two">'.$sym.'</span></p>
+					   <p class=price><span class=sprice>'.$pricetext.'</span> <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($value->price, 2, '.', '').'</span><span class="sym two">'.$sym.'</span></p>
+					   <p class="shipping">'.$sps.' <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($sp, 2, '.', '').'</span><span class="sym two">'.$sym.'</span></p>
 					   <div class=atc>';
 					   if ( $in_stock == 'yes') {
 					   	    $s .= '<p class=addtocart><a class="add id'.$value->id.'" href=#>'.$atct.'</a></p>';
@@ -263,8 +263,8 @@ function vkrwps_show_products_paging () {
 			   	   <div class=right>
 					   <p class=prod-name><a href='.get_site_url().'/'.strtolower($post_name).'/><span>'.$value->name.'</span></a></p>
 					   <div class=prod-desc>'.$sd.'</div>
-					   <p class=price><span class=sprice>'.$pricetext.'</span> <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($value->price, 2).'</span><span class="sym two">'.$sym.'</span></p>
-					   <p class="shipping">'.$sps.' <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($sp, 2).'</span><span class="sym two">'.$sym.'</span></p>
+					   <p class=price><span class=sprice>'.$pricetext.'</span> <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($value->price, 2, '.', '').'</span><span class="sym two">'.$sym.'</span></p>
+					   <p class="shipping">'.$sps.' <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($sp, 2, '.', '').'</span><span class="sym two">'.$sym.'</span></p>
 					   <div class=atc>';
 					   if ( $in_stock == 'yes') {
 					   	    $s .= '<p class=addtocart><a class="add id'.$value->id.'" href=#>'.$atct.'</a></p>';
@@ -342,9 +342,9 @@ function vkrwps_full_prod_info ( $atts ) {
 		$s .= '
 			   <div class="rwpsprod fp">
 
-					   <p class=price><span class=sprice>'.$pricetext.'</span> <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($prod_info->price, 2).'</span><span class="sym two">'.$sym.'</span></p>
+					   <p class=price><span class=sprice>'.$pricetext.'</span> <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($prod_info->price, 2, '.', '').'</span><span class="sym two">'.$sym.'</span></p>
 
-					   <p class="shipping">'.$sps.' <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($sp, 2).'</span><span class="sym two">'.$sym.'</span></p>';
+					   <p class="shipping">'.$sps.' <span class="sym one">'.$sym.'</span><span class=amount>'.number_format($sp, 2, '.', '').'</span><span class="sym two">'.$sym.'</span></p>';
 
 					   if ( $prod_info->in_stock == 'yes') {
 					   	    $s .= '<p class=addtocart><a class="add id'.$prod_info->id.'" href=#>'.$atct.'</a></p>';
@@ -409,7 +409,7 @@ function vkrwps_cart ( $atts ) {
 							   <span class=x>x</span> 
 							   <span class=value>' . $value . '</span> 
 							   <span class=equal>=</span> 
-							   <span class="sym one">'.$sym.'</span><span class=amount>' .number_format($sub, 2) . '</span><span class="sym two">'.$sym.'</span>
+							   <span class="sym one">'.$sym.'</span><span class=amount>' .number_format($sub, 2, '.', '') . '</span><span class="sym two">'.$sym.'</span>
 							   <span class=rac>
 								   <a class="remove id'.$product->id.'" href=#>'.$spt.'</a>
 								   <a class="add id'.$product->id.'" href=#>'.$apa.'</a>
@@ -420,7 +420,7 @@ function vkrwps_cart ( $atts ) {
 					';
 					$imgsrc = '<img style="width:100px;" src='.content_url().'/rwpsliteuploads/'.$product->id.'.jpg >';
 					$ppfe = $value * $product->price;
-					$ppfe = number_format($ppfe, 2);
+					$ppfe = number_format($ppfe, 2, '.', '');
 					$ppfe = $sym.$ppfe;
 					$sess .= "$imgsrc&nbsp;&nbsp; $product->name x $value &nbsp;&nbsp; $ppfe<br><br>";	
 				}
@@ -453,7 +453,7 @@ function vkrwps_cart ( $atts ) {
 	$totalTax = $tax / 100 * $total;
 	$_SESSION['des_tax_cost'] = $totalTax;
 	$total2 = $total + $totalTax + $shipprice;
-	$_SESSION['tws'] = number_format($total2, 2);
+	$_SESSION['tws'] = number_format($total2, 2, '.', '');
 	$_SESSION['sess'] = $sess;
 
 	$tax = get_option( 'vkrwps_tax' );
@@ -476,16 +476,16 @@ function vkrwps_cart ( $atts ) {
 
 		
 
-		$s .= '<p class=totalp><span class=total>'.$ctat.'</span> <span class="sym one">' . $sym .'</span><span class=amount>'.number_format($total, 2).'</span><span class="sym two">'.$sym.'</span></p>';
+		$s .= '<p class=totalp><span class=total>'.$ctat.'</span> <span class="sym one">' . $sym .'</span><span class=amount>'.number_format($total, 2, '.', '').'</span><span class="sym two">'.$sym.'</span></p>';
 
 		$tax = get_option( 'vkrwps_tax' );
 		$s .= '<p class=taxp><span class=taxtext>'. $taxtext . '</span> <span class=amount>' . $tax . '%</span></p>';
 
-		$s .= '<p class=totalwtp><span class=totalwt>' . $ctatwt . '</span> <span class="sym one">' . $sym .'</span><span class=amount>'. number_format($totalTax, 2) . '</span><span class="sym two">'.$sym.'</span></p>';
+		$s .= '<p class=totalwtp><span class=totalwt>' . $ctatwt . '</span> <span class="sym one">' . $sym .'</span><span class=amount>'. number_format($totalTax, 2, '.', '') . '</span><span class="sym two">'.$sym.'</span></p>';
 
 		$ppk = get_option( 'vkrwps_sppk' );
 		$twppk = $ppk * $weight;
-		$twppk = number_format($twppk, 2);
+		$twppk = number_format($twppk, 2, '.', '');
 
 		$totaltotal = $totalTax + $twppk;
 		$_SESSION['totalWE'] = $totaltotal;
@@ -527,7 +527,7 @@ function vkrwps_cart ( $atts ) {
 			$s .= '<p><span class="sct">'.$t.'</span>
 					    <span class=scc>'.$count.'</span> 
 					    <span class=scit>'.$it.'</span>
-					    <span class=scs>'.$sym2.'</span><span class=sctp>'.number_format($total, 2).'</span>
+					    <span class=scs>'.$sym2.'</span><span class=sctp>'.number_format($total, 2, '.', '').'</span>
 					    <span class=asci></span>
 				    </p>
 					<p><a href="#" class="clearcart">'.$cct2.'</a></p>
@@ -724,7 +724,7 @@ function vkrwps_checkout ( $atts ) {
 					$i_weight = $product->weight;
 					$sym = get_option( 'vkrwps_currency' );
 					$shipprice = $sppk * $i_weight * $value;
-					$shipprice = number_format($shipprice, 2);
+					$shipprice = number_format($shipprice, 2, '.', '');
 
 					$s .= '<div class=copn>
 
@@ -739,12 +739,12 @@ function vkrwps_checkout ( $atts ) {
 									   <span class=x>x</span> 
 									   <span class=value>' . $value . '</span> 
 									   <span class=equal>=</span> 
-									   <span class="sym one">'.$sym.'</span><span class=amount>' . number_format($sub, 2) . '</span><span class="sym two">'.$sym.'</span>
+									   <span class="sym one">'.$sym.'</span><span class=amount>' . number_format($sub, 2, '.', '') . '</span><span class="sym two">'.$sym.'</span>
 								   </div>
 
 								   <p class=coweight><span class=weight>' . $weighttext .' </span> <span>' . $i_weight . '</span> <span class=weightm>' . $weightmtext . ' </span></p>
 
-								   <p class=coshipprice><span class=cosp>'.$sps.'</span> <span class="sym one">'.$sym.'</span><span class=amount>' . number_format($shipprice, 2) . '</span><span class="sym two">'.$sym.'</p>
+								   <p class=coshipprice><span class=cosp>'.$sps.'</span> <span class="sym one">'.$sym.'</span><span class=amount>' . number_format($shipprice, 2, '.', '') . '</span><span class="sym two">'.$sym.'</p>
 
 								   <span class=rac>
 									   <a class="removeco id'.$product->id.'" href=#>'.$spt.'</a>
@@ -775,7 +775,7 @@ function vkrwps_checkout ( $atts ) {
 
 	$s .= '<div class=ftotal>';
 
-	$s .= '<p class=totalp><span class=cototal>'.$ctat.'</span> <span class="sym one">' . $sym .'</span><span class=amount>'.number_format($total, 2).'</span><span class="sym two">'.$sym.'</span></p>';
+	$s .= '<p class=totalp><span class=cototal>'.$ctat.'</span> <span class="sym one">' . $sym .'</span><span class=amount>'.number_format($total, 2, '.', '').'</span><span class="sym two">'.$sym.'</span></p>';
 
 	$taxtext = get_option( 'vkrwps_taxtext' );
 
@@ -797,19 +797,19 @@ function vkrwps_checkout ( $atts ) {
 
 	$twtas = get_option( 'vkrwps_twtas' );
 
-	$s .= '<p class=totalwtp><span class=totalwt>' . $ctatwt . '</span> <span class="sym one">' . $sym .'</span><span class=amount>'. number_format($totalTax, 2) . '</span><span class="sym two">'.$sym.'</span></p>';
+	$s .= '<p class=totalwtp><span class=totalwt>' . $ctatwt . '</span> <span class="sym one">' . $sym .'</span><span class=amount>'. number_format($totalTax, 2, '.', '') . '</span><span class="sym two">'.$sym.'</span></p>';
 
 	$s .= '<p class=weightp><span class=weight>'.$weighttext.'</span> <span class=amount>'.$weight.'</span> <span class=weightm>' . $weightmtext . '</span></p>';
 
 	$ppk = get_option( 'vkrwps_sppk' );
 
 	$twppk = $ppk * $weight;
-	$twppk = number_format($twppk, 2);
+	$twppk = number_format($twppk, 2, '.', '');
 
 	$s .= '<p class=shippingp><span class=shipprice>' . $sps . '</span> <span class="sym one">'.$sym.'</span><span class=shipamount>'.$twppk.'</span><span class="sym two">'.$sym.'</span></p>';
 
 	$totaltotal = $totalTax + $twppk;
-	$totaltotal = number_format($totaltotal, 2);
+	$totaltotal = number_format($totaltotal, 2, '.', '');
 	$s .= '<p class=totalallp><span class=totalalls>'.$twtas.'</span> <span class="sym one">'.$sym.'</span><span class=amounts>'.$totaltotal.'</span><span class="sym two">'.$sym.'</span></p>';
 
 	$s .= '</div>'; 
@@ -1296,7 +1296,7 @@ function vkrwps_customer_info() {
 	}
 
 	$st = $_SESSION['des_shipping_cost'];
-	$st = number_format($st, 2);
+	$st = number_format($st, 2, '.', '');
 	if ($emsym == 'before') {
 		$shipcost = $emcur . $st;
 	} else if ($emsym == 'after') {
@@ -1306,7 +1306,7 @@ function vkrwps_customer_info() {
 	}
 
 	$tt = $_SESSION['des_tax_cost'];
-	$tt = number_format($tt, 2);
+	$tt = number_format($tt, 2, '.', '');
 	if ($emsym == 'before') {
 		$taxcost = $emcur . $tt;
 	} else if ($emsym == 'after') {
@@ -1591,7 +1591,7 @@ function vkrwps_do_search() {
 			$hl = stripslashes($hl);
 
 			if ( $prod->in_stock == 'yes') {
-				$pp = '<span class="sym one">'.$sym.'</span><span class=amount>'.number_format($prod->price, 2).'</span><span class="sym two">'.$sym.'</span>';
+				$pp = '<span class="sym one">'.$sym.'</span><span class=amount>'.number_format($prod->price, 2, '.', '').'</span><span class="sym two">'.$sym.'</span>';
 			} else {
 				$pp = '<span class=oosls>'.$ooss.'</span>';
 			}
@@ -1767,7 +1767,7 @@ function vkrwps_ipn ( $atts ) {
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER,1);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, $req);
 	curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 1);
-	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2);
+	curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, 2, '.', '');
 	curl_setopt($ch, CURLOPT_FORBID_REUSE, 1);
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array('Connection: Close'));
 	 
