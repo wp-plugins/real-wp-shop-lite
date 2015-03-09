@@ -527,7 +527,7 @@ function vkrwps_cart ( $atts ) {
 			$s .= '<p><span class="sct">'.$t.'</span>
 					    <span class=scc>'.$count.'</span> 
 					    <span class=scit>'.$it.'</span>
-					    <span class=scs>'.$sym2.'</span><span class=sctp>'.$total.'</span>
+					    <span class=scs>'.$sym2.'</span><span class=sctp>'.number_format($total, 2).'</span>
 					    <span class=asci></span>
 				    </p>
 					<p><a href="#" class="clearcart">'.$cct2.'</a></p>
