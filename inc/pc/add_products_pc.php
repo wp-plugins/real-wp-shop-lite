@@ -126,7 +126,7 @@ function vkrwps_add_products_callback() {
 
         } 
 
-        $p = number_format($p, 2);
+        $p = number_format($p, 2, '.', '');
 
         if ($flag) {
             $wpdb->insert( 
