@@ -33,7 +33,7 @@ function vkrwps_pt() {
       sku VARCHAR(6) NOT NULL,
       description TEXT,
       long_description TEXT,
-      price FLOAT NOT NULL,
+      price VARCHAR(100) NOT NULL,
       shipping FLOAT,
       weight FLOAT,
       in_stock VARCHAR(3) NOT NULL,
