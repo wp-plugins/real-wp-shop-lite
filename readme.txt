@@ -1,7 +1,7 @@
 === Real WP Shop Lite Ajax eCommerce Shopping Cart===
 Tags: admin, attributes, blog catalog, catalog, catalogue, commerce, shopping cart, wp shopping cart, wp ecommerce, ecommerce shopping cart, directory, display products, e-commerce, ecommerce, gallery, implecode, inventory, list products, manage, plugin, post, posts, product, product catalog, paypal, product catalogue, product feed, product gallery, product management, products, sales, sell, shipping, shop, shopping, store, wordpress ecommerce, wp catalog, WP Catalogue, ajax, ajax ecommerce, ajax shopping cart
 Requires at least: 3.0.1
-Tested up to: 4.1
+Tested up to: 4.3
 Stable tag: 2.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
