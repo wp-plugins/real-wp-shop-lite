@@ -173,7 +173,7 @@ function vkrwps_show_products ( $atts ) {
 
 	for ($i=1; $i <= $max; $i++) { 
 		$ip = ceil( ($i - 1) * $paging);
-		$s .= '<a href=# class="page '.$ip.'">'.$i.'</a>';
+		$s .= '<a href=# data-offset="'.$ip.'" class="page '.$ip.'">'.$i.'</a>';
 	}
 
 	$s .= ' <a href=# class=next>Next</a>';
