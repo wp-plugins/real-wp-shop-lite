@@ -1,7 +1,9 @@
 jQuery(document).ready(function($) {    
     
-    console.log(ajax_object);
+    // console.log(ajax_object);
     if ( ! $('div.gai').length ) $('body').prepend('<div class=gai>'+ajax_object.preloader+'</div>');
+
+    if (! localStorage.getItem("lastClicked") > 0) localStorage.setItem("lastClicked", 0);
 
     // $('span.sym').css('visibility', 'visible');
 
@@ -479,6 +481,12 @@ jQuery(document).ready(function($) {
         if ( $(this).hasClass('active') ) {
             return false;
         }
+
+        // get offset 
+        var offset = $(this).data('offset');
+        // alert(offset);
+        // set localStorage
+        localStorage.setItem("lastClicked", offset);
 
         // get paging start
         var ps = $(this).attr('class');
@@ -1405,5 +1413,17 @@ jQuery(document).ready(function($) {
         $('#rwpssearch').val('');
         $('#rwpsresults li').removeClass('active');
     });
+
+    // alert('code');
+
+    var ppvk = localStorage.getItem("lastClicked");
+    // alert(ppvk);
+    if ( ppvk > 0)
+    {
+        if ($('div.rwps-paging').length)
+        {
+            $('a.page[data-offset='+ppvk+']')[0].click();
+        }
+    }
 
 }); // end ready
